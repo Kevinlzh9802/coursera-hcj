@@ -1,0 +1,219 @@
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: rgba(36, 28, 145, 0.938);
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: '微软雅黑', serif;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 1px #222; */
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#nav-list a.level2 {
+  padding: 10px;
+}
+
+#nav-list a:hover, #nav-list a:visited {
+  background: rgba(20, 3, 95, 0.938);
+  transition-duration: 0.3s;
+}
+
+ul.dropdown-menu {
+  background-color: rgba(36, 28, 145, 1)
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid white;
+}
+
+.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:visited {
+  background-color: rgba(20, 3, 95, 0.938);
+  transition: 0.3s;
+}
+/* END HEADER */
+
+
+/* START FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-color: rgba(36, 28, 145, 0.938);
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#contact, #social-media, #footer-desc {
+  line-height: 2;
+}
+#contact > span, #social-media > span, #footer-desc > span{
+  font-size: 1.3em;
+}
+#footer-desc a {
+  color: yellow;
+  cursor: pointer;
+}
+#footer-desc p {
+  margin-top: 15px;
+}
+
+
+/* END FOOTER */
+
+
+
+
+/* START MAIN PAGE */
+
+
+/* END MAIN PAGE */
+
+
+
+/* START CONTACTME.HTML */
+
+
+/* END CONTACTME.HTML */
+
+
+/* START ABOUT.HTML */
+
+#main-content a.thumbnail:hover, #main-content a.thumbnail:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-content .thumbnail img {
+  border: 5px black;
+  border-radius: 2px;
+  height: 150px;
+}
+
+.thumbnail .caption {
+  margin-bottom: 0;
+}
+/* END ABOUT.HTML */
+
+
+
+/* Media Queries */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  #nav-list a.level1 {
+    margin-top: 15px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  #nav-list a.level1 {
+    margin-top: 15px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  body {
+    font-size: 14px;
+  }
+  
+  .navbar-brand {
+    padding-top: 15px;
+  }
+  .navbar-brand h1 {
+    font-size: 1.5em;
+  }
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 1.4em; /* 1vw = 1% of viewport width */
+    margin: auto;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 2vw;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  footer.panel-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+ 
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+}
+
+
