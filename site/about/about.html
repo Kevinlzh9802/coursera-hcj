@@ -10,76 +10,56 @@
 </head>
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container">
-        <div class="navbar-header">
-          <a href="../index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img">
-							<img src="https://via.placeholder.com/60" alt="logo image">
-						</div>
+        <a class="navbar-brand" href="../index.html">
+          <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">首页<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                个人信息
+              </a>
+              <div id="nav-profile" class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="#">个人经历</a>
+                <a class="dropdown-item text-white" href="#">兴趣爱好</a>
+                <a class="dropdown-item text-white" href="../profile/ContactMe.html">联系方式</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../archive/archive.html">归档</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../playground/playground.html">广场</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">关于</a>
+            </li>
+          </ul>
+          <a href="mailto:zonghuan_li@outlook.com" id="email-link" class="mr-sm-2">
+            zonghuan_li@outlook.com
           </a>
-
-          <div id="myindex" class="navbar-brand">
-            <a href="../index.html"><h1>个人主页</h1></a>
-          </div>
-
-          <button id="navbutton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
         </div>
-
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="dropdown-toggle level1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								个人信息<span class="caret"></span>
-							</a>
-          			<ul class="dropdown-menu">
-            			<li><a href="#" class="level2">个人经历</a></li>
-            			<li><a href="#" class="level2">兴趣爱好</a></li>
-            			<li><a href="../profile/ContactMe.html" class="level2">联系方式</a></li>
-            			<li role="separator" class="divider"></li>
-            			<li><a href="#" class="level2">Separated link</a></li>
-          			</ul>
-            </li>
-            <li>
-              <a href="../archive/archive.html" class="level1">归档</a>
-            </li>
-            <li>
-              <a href="../playground/playground.html" class="level1">广场</a>
-            </li>
-            <li id="email" class="hidden-xs">
-              <a href="mailto:zonghuan_li@outlook.com" class="level1">
-								zonghuan_li@outlook.com
-							</a>
-						</li>
-						<li>
-              <a href="#" class="level1">关于</a>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-	</header>
-	
-	<div class="container">
-		<div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div id="incomplete-info" class="alert alert-info" role="alert">
-				  <span class="glyphicon glyphicon-info-sign"></span> 网站正在建设中！
-			  </div>
       </div>
-		</div>
-	</div>
+    </nav>
+	</header>
 
 	<div class="container">
-		<ol class="breadcrumb">
-			<li><a href="../index.html">首页</a></li>
-			<li class="active">关于本站</li>
-		</ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
+      <li class="breadcrumb-item active" aria-current="page">关于本站</li>
+    </ol>
 	</div>
 
 	<div id="main-content" class="container">
@@ -87,18 +67,15 @@
 		<div class="row">
       <p class="col-lg-12">本网站搭建时使用了以下资源，在此一并表示感谢。</p>
       <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://v3.bootcss.com/" class="thumbnail">
-          <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" alt="..." class="hidden-xs">
-          <p class="caption">Bootstrap</p>
-        </a>
+        <div class="card">
+          <a href="https://getbootstrap.com/">
+            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
+            <div class="card-body">
+              <p class="card-text">Bootstrap</p>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-        <a href="https://glyphicons.com/" class="thumbnail">
-          <img src="https://glyphicons.com/img/logo.svg" alt="..." class="hidden-xs">
-          <p class="caption">glyphicons</p>
-        </a>
-      </div>
-      
 		</div>
 	</div>
 	

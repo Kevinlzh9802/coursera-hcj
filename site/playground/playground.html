@@ -6,93 +6,102 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>归档</title>
+  <title>广场</title>
 </head>
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container">
-        <div class="navbar-header">
-          <a href="../index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img">
-							<img src="https://via.placeholder.com/60" alt="logo image">
-						</div>
+        <a class="navbar-brand" href="../index.html">
+          <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">首页<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                个人信息
+              </a>
+              <div id="nav-profile" class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="#">个人经历</a>
+                <a class="dropdown-item text-white" href="#">兴趣爱好</a>
+                <a class="dropdown-item text-white" href="../profile/ContactMe.html">联系方式</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../archive/archive.html">归档</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">广场</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">关于</a>
+            </li>
+          </ul>
+          <a href="mailto:zonghuan_li@outlook.com" id="email-link" class="mr-sm-2">
+            zonghuan_li@outlook.com
           </a>
-
-          <div id="myindex" class="navbar-brand">
-            <a href="../index.html"><h1>个人主页</h1></a>
-          </div>
-
-          <button id="navbutton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
         </div>
-
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="dropdown-toggle level1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								个人信息<span class="caret"></span>
-							</a>
-          			<ul class="dropdown-menu">
-            			<li><a href="#" class="level2">个人经历</a></li>
-            			<li><a href="#" class="level2">兴趣爱好</a></li>
-            			<li><a href="../profile/ContactMe.html" class="level2">联系方式</a></li>
-            			<li role="separator" class="divider"></li>
-            			<li><a href="#" class="level2">Separated link</a></li>
-          			</ul>
-            </li>
-            <li>
-              <a href="../archive/archive.html" class="level1">归档</a>
-            </li>
-            <li>
-              <a href="#" class="level1">广场</a>
-            </li>
-            <li id="email" class="hidden-xs">
-              <a href="mailto:zonghuan_li@outlook.com" class="level1">
-								zonghuan_li@outlook.com
-							</a>
-						</li>
-						<li>
-              <a href="../about/about.html" class="level1">关于</a>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
+      </div>
+    </nav>
 	</header>
 	
 	<div class="container">
 		<div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <div id="incomplete-info" class="alert alert-info" role="alert">
-				  <span class="glyphicon glyphicon-info-sign"></span> 网站正在建设中！
-			  </div>
+        <div class="alert alert-info" role="alert">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+            <circle cx="8" cy="4.5" r="1"/>
+          </svg>
+          网站正在建设中！
+        </div>
       </div>
 		</div>
 	</div>
 
 	<div class="container">
-		<ol class="breadcrumb">
-			<li><a href="../index.html">首页</a></li>
-			<li class="active">广场</li>
-		</ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
+      <li class="breadcrumb-item active" aria-current="page">广场</li>
+    </ol>
 	</div>
 
 	<div id="main-content" class="container">
 		<h2>广场</h2>
 		<div class="row">
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <a href="#" class="thumbnail">
-					<img src="https://www.premierleague.com/resources/prod/dd069ca-2955/i/elements/premier-league-logo.svg" 
-					alt="..." class="hidden-xs">
-          <p class="caption">football something</p>
-        </a>
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <a href="FootballPage.html">
+            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
+            <div class="card-body">
+              <p class="card-text">Football something</p>
+            </div>
+          </a>
+        </div>
       </div>
-		</div>
+
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <a href="StringGenerator.html">
+            <img src="https://getbootstrap.com/docs/4.5/assets/img/bootstrap-icons.png" class="card-img-top hidden-xs" alt="Bootstrap">
+            <div class="card-body">
+              <p class="card-text">密码生成</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> <!--  End of row -->
 	</div>
 	
 	<footer class="panel-footer">

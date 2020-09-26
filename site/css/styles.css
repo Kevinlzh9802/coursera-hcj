@@ -3,67 +3,30 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+h2 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 /** HEADER **/
-#header-nav {
-  background-color: rgba(36, 28, 145, 0.938);
-  color: #fff;
-  border-radius: 0;
-  border: 0;
+nav.navbar {
+  margin-bottom: 15px;
 }
 
-#logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 60px;
-  height: 60px;
-  margin: 10px 15px 10px 0;
-}
-
-.navbar-brand {
-  padding-top: 25px;
-}
-
-.navbar-brand h1 { /* Restaurant name */
-  font-family: '微软雅黑', serif;
-  color: white;
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  /* text-shadow: 1px 1px 1px #222; */
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-#nav-list a {
-  color: white;
-  text-align: center;
-  border-radius: 3px;
-}
-
-#nav-list a.level2 {
-  padding: 10px;
-}
-
-#nav-list a:hover, #nav-list a:visited {
-  background: rgba(20, 3, 95, 0.938);
-  transition-duration: 0.3s;
-}
-
-ul.dropdown-menu {
-  background-color: rgba(36, 28, 145, 1)
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid white;
-}
-
-.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:visited {
-  background-color: rgba(20, 3, 95, 0.938);
+#nav-profile a:hover, #nav-profile a:focus{
+  background-color: black;
   transition: 0.3s;
 }
+
+a#email-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a#email-link:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.65);
+}
+
 /* END HEADER */
 
 
@@ -73,7 +36,7 @@ ul.dropdown-menu {
   padding-top: 35px;
   padding-bottom: 30px;
   color: #fff;
-  background-color: rgba(36, 28, 145, 0.938);
+  background-color: #343a40;
   border-top: 0;
 }
 .panel-footer div.row {
@@ -113,24 +76,54 @@ ul.dropdown-menu {
 
 
 /* START ABOUT.HTML */
+.card:hover {
+  border: 1px solid rgba(0, 0, 255, 0.4);
+  transition: 0.3s;
+}
 
-#main-content a.thumbnail:hover, #main-content a.thumbnail:focus {
+.card a {
+  color: black;
+}
+
+.card a:hover, .card a:focus {
   text-decoration: none;
   cursor: pointer;
 }
 
-#main-content .thumbnail img {
-  border: 5px black;
-  border-radius: 2px;
-  height: 150px;
+.card .card-body {
+  padding: 5px 10px;
 }
 
-.thumbnail .caption {
-  margin-bottom: 0;
-}
 /* END ABOUT.HTML */
 
+/* START STRING GENERATOR.HTML */
+.form-check:nth-child(1) {
+  margin-top: 15px;
+}
 
+.form-check:last-child {
+  margin-bottom: 25px;
+}
+
+.form-check {
+  margin: 10px auto;
+}
+
+.selection input {
+  margin-top: 15px;
+}
+
+.selection {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+/* END STRING GENERATOR.HTML */
 
 /* Media Queries */
 /********** Large devices only **********/
